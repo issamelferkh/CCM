@@ -1,71 +1,55 @@
-# Todo
-- App name: CCM - Cluster Chimie & Matériaux
-- Slogo
-- Langage
 
 
+## Security
+- [ ] Secure DB access
 
 ## Template
+- [x] NavBar
 - [x] Header
-- [x] Container (Body)
-- [x] Sidebar (Menu + Footer)
-- [x] DataTables
-- [ ] msg errors
+- [x] Container
+- [x] Footer
+- [ ] msg error
 
-## Login
-- [x] Sign In
-- [x] Sign Out
+## Login/Logout
+- [x] secure login system
+- [ ] msg error
 
-## Client Management
-- [x] New client
-- [x] list client
-- [x] Detail client
-- [x] Update client
-- [x] Delete client
-- Issues
-  - [ ] Tele: not show 0
+## Data Exchange
+- [x] Create Folder
+- [x] Create Sub folders
 
-## Credit Management
-- [x] Add done
-- [x] List
-- [x] Delete
-- [x] Update
-- [x] Colors
-- [x] Calc
+- [x] swith to datatables
+- [3] Upload files
 
-## Ingredient Management
-- [x] Ingredient Add: Issue
-- [x] Ingredient List
-- [ ] Ingredient Delete
 
-## Menu Management
-- [x] Menu List
-- [x] Add New Menu
-- [ ] Menu Delete
 
-## Order Management
-- [ ] New Order
-  - Client (Full name + Class/Group + Tele) + Menu (Name, Price, Qte) + remise (0%, 25%, 50%, 100%) + remarque + Create_at + Status (???) + Unique ID + Daily ID
+id_file
+id_folder -> id_folder
+name -> filename
+size -> size
+path -> destination
+create_at
 
-- [ ] Order List
-  - All Orders
+- check if folder or file and change icone
+- show or download file when click 
+- UI import file
 
-- [ ] Order Detail
-  -> like facture (client + Menus + remise + remarque + status + IDs) -> Client Detail + Menu Details
 
-- [ ] Order Update
-  - Change Status 
-    - status ->  -> done ->
-    - Ordered -> Pending -> Delivered
-    - Canceled
-    - Archived
 
-## Comptes
-- Admin
-- user
-  - client
-  - order
+- [x] delete folder or file
+- [4] Share Folder or file
 
-## Devis
-- [ ] Create a devis
+## Forum
+- [x] Submit New question
+- [x] question detail = answers
+- [x] add answer
+
+## Chat
+- Soon
+
+
+
+## Private Chat
+
+
 
