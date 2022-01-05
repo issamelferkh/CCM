@@ -11,7 +11,7 @@
           <a class="nav-link" href="../app/dashboard.php">Dashboard</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="../app/faq.php">Forum</a>
+          <a class="nav-link" href="../app/forum.php">Forum</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="../app/soon.php">Chat</a>

@@ -28,11 +28,13 @@ if (isset($_GET['id'])) {
     } else {
       $answer = htmlspecialchars($_POST['answer']);
       $id_question = htmlspecialchars($_POST['id_question']);
+      $id_user = $_SESSION['id_user'];
 
-      $query = 'INSERT INTO `answer` (`id_question`,`answer`) 
-      VALUES (?,?)';
+
+      $query = 'INSERT INTO `answer` (`id_question`,`answer`,`id_user`) 
+      VALUES (?,?,?)';
         $query = $db->prepare($query);
-        if ($query->execute([$id_question, $answer])) {
+        if ($query->execute([$id_question, $answer,$id_user])) {
           echo "
             <script>
               const msg = 'Done.';
@@ -69,7 +71,21 @@ if (isset($_GET['id'])) {
     <div class="row row-cols-1 row-cols-md-12 g-12">
       <div class="col">
         <div class="card">
-          <div class="card-header"><i class="bi bi-archive"> Issam EL FEKRH</i></div>
+          <div class="card-header">
+            <i class="bi bi-archive">
+              <?php
+                $q1 = 'SELECT * FROM `question` WHERE `id_question` like "'.$id_question.'"';
+                $result = $db->query($q1);
+                $r1 = $result->fetch(PDO::FETCH_ASSOC);
+
+                $q3 = 'SELECT * FROM `user` WHERE `id_user`="'.$r1['id_user'].'" ';
+                $q3 = $db->query($q3);
+                $r3 = $q3->fetch(\PDO::FETCH_ASSOC);
+                // if ($c3 > 0)
+                echo "By <b>".$r3['fname']." ".$r3['lname']."</b> on ".$r1['create_at']; 
+              ?>
+            </i>
+          </div>
           <div class="card-body text-secondary">
             <h5 class="card-title"><?php if (isset($r1['question'])) echo $r1['question']; ?></h5>
           </div>
@@ -92,15 +108,18 @@ if (isset($_GET['id'])) {
       $i2 = 0; // i = index
 
       while ($i2 < $c2) {
+        // recover answer owner for etch answer
+        $q4 = 'SELECT * FROM `user` WHERE `id_user`="'.$r2[$i2]['id_user'].'" ';
+        $q4 = $db->query($q4);
+        $r4 = $q4->fetch(\PDO::FETCH_ASSOC);
+        $owner = "By <b>".$r4['fname']." ".$r4['lname']."</b> on ".$r2[$i2]['create_at'];
+
         echo "
           <div class='col' style='padding-bottom: 20px;'>
             <div class='card'>
-              <div class='card-header'><i class='bi bi-archive'> Issam EL FERKH</i></div>
+              <div class='card-header'><i class='bi bi-archive'>".$owner."</i></div>
               <div class='card-body text-secondary'>
                 <p class='card-text'>".$r2[$i2]["answer"]."</p>
-              </div>
-              <div class='card-footer text-muted'>
-                ".$r2[$i2]["create_at"]."
               </div>
             </div>
           </div>

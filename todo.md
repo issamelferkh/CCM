@@ -8,6 +8,7 @@
 - [x] Header
 - [x] Container
 - [x] Footer
+- [x] swith to datatables
 - [ ] msg error
 
 ## Login/Logout
@@ -15,13 +16,17 @@
 - [ ] msg error
 
 ## Data Exchange
+### Folders
 - [x] Create Folder
 - [x] Create Sub folders
+- [x] Listed Folder / SubFolders
+  - Using DataTables
+- [ ] Update Folder / SubFolder name
+- [x] delete folder
+- [+] Share Folder
 
-- [x] swith to datatables
-- [3] Upload files
-
-
+### Files
+- [+] Upload files
 
 id_file
 id_folder -> id_folder
@@ -34,15 +39,17 @@ create_at
 - show or download file when click 
 - UI import file
 
-
-
-- [x] delete folder or file
-- [4] Share Folder or file
+- [ ] Update File name
+- [+++] Delete files
+- [+] Share file
 
 ## Forum
+- [ ] Fixe categories type
 - [x] Submit New question
+  - [x] question awner: by Issam EL FERKH on 01/54/2015 at 12:54
 - [x] question detail = answers
-- [x] add answer
+- [x] add answers
+  - [x] answer owner: by Issam EL FERKH on 01/54/2015 at 12:54
 
 ## Chat
 - Soon

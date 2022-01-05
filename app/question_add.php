@@ -9,12 +9,12 @@
     } else {
       $question = htmlspecialchars($_POST['question']);
       $id_cat = htmlspecialchars($_POST['id_cat']);
+      $id_user = $_SESSION['id_user'];
 
-
-      $query = 'INSERT INTO `question` (`question`,`id_cat`) 
-      VALUES (?,?)';
+      $query = 'INSERT INTO `question` (`question`,`id_cat`, `id_user`) 
+      VALUES (?,?,?)';
         $query = $db->prepare($query);
-        if ($query->execute([$question, $id_cat])) {
+        if ($query->execute([$question, $id_cat,$id_user])) {
           echo "
             <script>
               const msg = 'Done.';

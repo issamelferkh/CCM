@@ -4,7 +4,7 @@
 
 <div class="nav-scroller bg-body shadow-sm">
   <nav class="nav nav-underline" aria-label="Secondary navigation">
-    <a class="nav-link" href="../app/question_add.php">New Question</a>
+    <a class="nav-link" href="../app/question_add.php">Submit New Question</a>
   </nav>
 </div>
 
@@ -13,7 +13,6 @@
 
   <div class="my-3 p-3 bg-body rounded shadow-sm">
     <h6 class="border-bottom pb-2 mb-10">Forum</h6>
-
     <!-- Categories List -->
     <div class="row row-cols-1 row-cols-md-3 g-4">
       <div class="col">
