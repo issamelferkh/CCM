@@ -53,11 +53,28 @@
       <div class="row">
         <div class="p-2 col-md-6">
           <select class="form-select" name="id_cat">
+          <?php
+          // Fetch Categories
+      // $q2 = 'SELECT * FROM `category`'; //q = query
+      // $q2 = $db->query($q2);
+      // $q2->execute();
+      // $c2 = $q2->rowCount(); //c = count
+      // $r2 = $q2->fetchAll(PDO::FETCH_ASSOC); // r = row
+      // $i2 = 0; // i = index
+
+      // while ($i2 < $c2) {
+      //   echo "<option value='1'>Category A</option>";
+      //   $i2++;
+      // }
+    ?>
+
+
+
             <option selected>Select Category</option>
-            <option value="1">Category A</option>
-            <option value="2">Category B</option>
-            <option value="3">Category C</option>
-            <option value="4">Category D</option>
+            <option value="1">News</option>
+            <option value="2">Scientific DiscussionB</option>
+            <option value="3">Scientific Readings</option>
+            <!-- <option value="4">Category D</option> -->
           </select>
         </div>
 

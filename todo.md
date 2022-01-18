@@ -11,9 +11,18 @@
 - [x] swith to datatables
 - [ ] msg error
 
-## Login/Logout
+## Users
+### Sign up
+- [ ] create non active user
+
+### Sign In
+- [x] Done
+
+### Logout
 - [x] secure login system
 - [ ] msg error
+- [ ] auto logout after 5 min 
+
 
 ## Data Exchange
 ### Folders
@@ -50,6 +59,10 @@ create_at
 - [x] question detail = answers
 - [x] add answers
   - [x] answer owner: by Issam EL FERKH on 01/54/2015 at 12:54
+
+### Categories
+- CRUD Categories
+  - id_cat / title / descruption / ...
 
 ## Chat
 - Soon

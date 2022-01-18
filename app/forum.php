@@ -17,10 +17,10 @@
     <div class="row row-cols-1 row-cols-md-3 g-4">
       <div class="col">
         <div class="card">
-          <div class="card-header"><i class="bi bi-archive"> Gategory A</i></div>
+          <div class="card-header"><i class="bi bi-archive"> News</i></div>
           <div class="card-body text-secondary">
-            <h5 class="card-title">A brief description of Category A</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h5 class="card-title">A brief description of category news</h5>
+            <p class="card-text">The perfect place to discuss the latest scientific news.</p>
             <a href="question_list.php?id=1" class="stretched-link"></a>
           </div>
         </div>
@@ -28,10 +28,10 @@
 
       <div class="col">
         <div class="card">
-          <div class="card-header"><i class="bi bi-archive"> Gategory B</i></div>
+          <div class="card-header"><i class="bi bi-archive"> Scientific Discussion</i></div>
           <div class="card-body text-secondary">
-            <h5 class="card-title">A brief description of Category B</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h5 class="card-title">The scientific discussion category</h5>
+            <p class="card-text">The place to give your opinion and ask for the opinions of others.</p>
             <a href="question_list.php?id=2" class="stretched-link"></a>
           </div>
         </div>
@@ -39,22 +39,11 @@
 
       <div class="col">
         <div class="card">
-          <div class="card-header"><i class="bi bi-archive"> Gategory C</i></div>
+          <div class="card-header"><i class="bi bi-archive"> Scientific Readings</i></div>
           <div class="card-body text-secondary">
-            <h5 class="card-title">A brief description of Category C</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h5 class="card-title">A brief description of scientific readings</h5>
+            <p class="card-text">Looking for information on scientific journals? This section is there for that.</p>
             <a href="question_list.php?id=3" class="stretched-link"></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card">
-          <div class="card-header"><i class="bi bi-archive"> Gategory D</i></div>
-          <div class="card-body text-secondary">
-            <h5 class="card-title">A brief description of Category D</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="question_list.php?id=4" class="stretched-link"></a>
           </div>
         </div>
       </div>
