@@ -28,32 +28,25 @@
 ### Folders
 - [x] Create Folder
 - [x] Create Sub folders
-- [x] Listed Folder / SubFolders
-  - Using DataTables
-- [ ] Update Folder / SubFolder name
+- [x] Listed Folder / SubFolders: Using DataTables
 - [x] delete folder
-- [+] Share Folder
+- [ ] Update Folder / SubFolder name
 
 ### Files
+- info: the files was uploaded to the path (destination): C:\xampp\htdocs\ccm\uploads
 - [+] Upload files
-
-id_file
-id_folder -> id_folder
-name -> filename
-size -> size
-path -> destination
-create_at
-
-- check if folder or file and change icone
-- show or download file when click 
-- UI import file
-
+- [x] check if folder or file and change icone
+- [x] List files: Using DataTables
+- [x] Delete file
+- [x] Download file when click 
 - [ ] Update File name
-- [+++] Delete files
-- [+] Share file
+
+### Sharing Data
+- [ ] Share Folder
+- [ ] Share file
+
 
 ## Forum
-- [ ] Fixe categories type
 - [x] Submit New question
   - [x] question awner: by Issam EL FERKH on 01/54/2015 at 12:54
 - [x] question detail = answers
@@ -61,12 +54,9 @@ create_at
   - [x] answer owner: by Issam EL FERKH on 01/54/2015 at 12:54
 
 ### Categories
+- [ ] Fixe categories type
 - CRUD Categories
   - id_cat / title / descruption / ...
-
-## Chat
-- Soon
-
 
 
 ## Private Chat

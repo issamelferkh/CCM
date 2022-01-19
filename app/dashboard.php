@@ -59,7 +59,7 @@
         </thead>
         <tbody>
           <?php
-// Folders
+// Fetch Folders
   while ($i < $c) {
     echo "
       <tr>
@@ -76,15 +76,15 @@
     $i++;
   }
 
-  // Files
+  // Fetch Files
   $i = 0;
   while ($i < $c2) {
     echo "
       <tr>
         <td>
-          <a href='dashboard.php?master_id=".$r2[$i]["id_folder"]."'><i class='fas fa-share-square' style='font-size: 1em; color: green;'></i></a>&nbsp
-          <a href='folder_delete.php?id=".$r2[$i]["id_folder"]."'  onclick='return myConfirm();'><i class='fas fa-trash-alt' style='font-size: 1em; color: #f15968;'></i></a>&nbsp
-          <a href='dashboard.php?master_id=".$r2[$i]["id_folder"]."'><i class='far fa-file' style='font-size: 1em; color: #6f42c1;'></i></a>&nbsp
+          <a href='dashboard.php?master_id=".$r2[$i]["id_file"]."'><i class='fas fa-share-square' style='font-size: 1em; color: green;'></i></a>&nbsp
+          <a href='file_delete.php?id=".$r2[$i]["id_file"]."'  onclick='return myConfirm();'><i class='fas fa-trash-alt' style='font-size: 1em; color: #f15968;'></i></a>&nbsp
+          <a href='".$r2[$i]["path"]."'><i class='far fa-file' style='font-size: 1em; color: #6f42c1;'></i></a>&nbsp
           ".$r2[$i]["name"]."
         </td>
         <td>".$r2[$i]["name"]."</td>

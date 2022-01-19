@@ -18,7 +18,7 @@ if (isset($_POST['file_upload']) && isset($_FILES) && isset($_POST['id_folder'])
     $file = $_FILES['myfile']['tmp_name'];
     $size = $_FILES['myfile']['size'];
 
-    if (!in_array($extension, ['zip', 'pdf', 'docx', 'png'])) {
+    if (!in_array($extension, ['zip', 'pdf', 'docx', 'png', 'xlsx'])) {
         echo "You file extension must be .zip, .pdf or .docx";
     } elseif ($_FILES['myfile']['size'] > 1000000) { // file shouldn't be larger than 1Megabyte
         echo "File too large!";
